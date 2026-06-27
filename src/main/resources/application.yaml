@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/testing
+    username: rflor
+    password: 123456
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    open-in-view: false
+    show-sql: true
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        format_sql: true
+
+server:
+  port: 8080
